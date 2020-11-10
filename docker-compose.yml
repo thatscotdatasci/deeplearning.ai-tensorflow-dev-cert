@@ -1,0 +1,10 @@
+version: '3'
+services:
+  streamlit:
+    build: .
+    environment:
+    - PORT=$PORT
+    ports:
+    - $PORT:$PORT
+    volumes:
+    - .:/streamlit_app/
