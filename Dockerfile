@@ -17,4 +17,4 @@ USER myuser
 
 # Run the app - Heroku uses the CMD
 # Execute setup.sh at runtime - needs to have the correct port
-CMD sh setup.sh && streamlit run "./streamlit_app/DeepLearning.AI TensorFlow Certification.py" --server.port "$PORT"
+CMD sh setup.sh && streamlit run "./streamlit_app/main.py" --server.port "$PORT"

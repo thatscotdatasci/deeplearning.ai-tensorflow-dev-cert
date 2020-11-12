@@ -17,7 +17,8 @@ tsds_icon = Image.open(BytesIO(tsds_icon_data.content))
 st.set_page_config(
     page_title="DeepLearning.AI TensorFlow Certification",
     page_icon=tsds_icon,
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    layout="wide"
 )
 
 # Display the TSDS logo in the sidebar
@@ -37,8 +38,3 @@ navigation_radio_options = (HousingPrices,)
 
 # Content manager
 content_manager = NavigationManager(navigation_radio_options, HousingPrices)
-
-st.sidebar.markdown("""
----
-Find out more about me, and my other projects, at [ThatScotDataSci](https://thatscotdatasci.com).
-""")

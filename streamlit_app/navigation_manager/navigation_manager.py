@@ -17,6 +17,7 @@ class NavigationManager:
         self._radio_validation()
 
         self._display_navigation()
+        self._display_footer()
         self._display_content()
 
     @property
@@ -49,6 +50,13 @@ class NavigationManager:
     def _display_navigation(self):
         st.sidebar.markdown("## Navigation")
         self._instantiate_radio()
+
+    @staticmethod
+    def _display_footer():
+        st.sidebar.markdown("""
+        ---
+        Find out more about me, and my other projects, at [ThatScotDataSci](https://thatscotdatasci.com).
+        """)
 
     def _display_content(self):
         self._active_radio.action()
