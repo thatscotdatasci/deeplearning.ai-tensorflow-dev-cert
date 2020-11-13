@@ -22,7 +22,7 @@ st.set_page_config(
 )
 
 # Display the TSDS logo in the sidebar
-# st.sidebar.image(tsds_icon)
+st.sidebar.image(tsds_icon)
 
 # App title in sidebar
 st.sidebar.markdown("""
