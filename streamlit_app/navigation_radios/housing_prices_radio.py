@@ -6,7 +6,7 @@ import streamlit as st
 from streamlit_app.abstract_classes.abstract_navigation_radio import AbstractNavigationRadio
 
 
-class HousingPrices(AbstractNavigationRadio):
+class HousingPricesRadio(AbstractNavigationRadio):
 
     name = "House Price Prediction"
 
